@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	SFTP
+%define		pdir	Net
+%define		pnam	SFTP
 Summary:	Net::SFTP - Secure File Transfer Protocol client
 Summary(pl):	Net::SFTP - klient protoko³u SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP

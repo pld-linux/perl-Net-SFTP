@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	SFTP
 Summary:	Net::SFTP - Secure File Transfer Protocol client
-#Summary(pl):	
+Summary(pl):	Net::SFTP - klient protoko³u SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP
 Version:	0.08
 Release:	1
@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cba9af8f26eee958733fa3b6ad4e2d8a
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Net-SSH-Perl >= 1.24
@@ -24,16 +24,22 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-I<Net::SFTP> is a pure-Perl implementation of the Secure File
-Transfer Protocol (SFTP)--file transfer built on top of the SSH
-protocol. I<Net::SFTP> uses I<Net::SSH::Perl> to build a secure,
-encrypted tunnel through which files can be transferred and
-managed. It provides a subset of the commands listed in the
-SSH File Transfer Protocol IETF draft, which can be found at
-I<http://www.openssh.com/txt/draft-ietf-secsh-filexfer-00.txt>.
+Net::SFTP is a pure-Perl implementation of the Secure File Transfer
+Protocol (SFTP) - file transfer built on top of the SSH protocol.
+Net::SFTP uses Net::SSH::Perl to build a secure, encrypted tunnel
+through which files can be transferred and managed. It provides a
+subset of the commands listed in the SSH File Transfer Protocol IETF
+draft, which can be found at
+http://www.openssh.com/txt/draft-ietf-secsh-filexfer-00.txt .
 
-# %description -l pl
-# TODO
+%description -l pl
+Net::SFTP to czysto perlowa implementacja protoko³u SFTP (Secure File
+Transfer Protocol) - przesy³ania plików w oparciu o protokó³ SSH.
+Net::SFTP u¿ywa Net::SSH::Perl do utworzenia bezpiecznego,
+szyfrowanego tunelu, przez który mo¿na przesy³aæ pliki i zarz±dzaæ
+nimi. Udostêpnia podzbiór poleceñ podanych w szkicu IETF "SSH File
+Transfer Protocol", dostêpnym pod adresem
+http://www.openssh.com/txt/draft-ietf-secsh-filexfer-00.txt .
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

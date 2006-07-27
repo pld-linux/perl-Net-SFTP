@@ -8,13 +8,13 @@
 Summary:	Net::SFTP - Secure File Transfer Protocol client
 Summary(pl):	Net::SFTP - klient protoko³u SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP
-Version:	0.09
-Release:	1
+Version:	0.10
+Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a5d56bef9eef06993449598cb2aee8a2
+# Source0-md5:	8383eb0839178cab8cbfe619b232b8c0
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}

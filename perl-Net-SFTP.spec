@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SFTP
 Summary:	Net::SFTP - Secure File Transfer Protocol client
-Summary(pl):	Net::SFTP - klient protoko³u SFTP (Secure File Transfer Protocol)
+Summary(pl.UTF-8):   Net::SFTP - klient protokoÅ‚u SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP
 Version:	0.10
 Release:	0.1
@@ -32,13 +32,13 @@ subset of the commands listed in the SSH File Transfer Protocol IETF
 draft, which can be found at
 http://www.openssh.com/txt/draft-ietf-secsh-filexfer-00.txt .
 
-%description -l pl
-Net::SFTP to czysto perlowa implementacja protoko³u SFTP (Secure File
-Transfer Protocol) - przesy³ania plików w oparciu o protokó³ SSH.
-Net::SFTP u¿ywa Net::SSH::Perl do utworzenia bezpiecznego,
-szyfrowanego tunelu, przez który mo¿na przesy³aæ pliki i zarz±dzaæ
-nimi. Udostêpnia podzbiór poleceñ podanych w szkicu IETF "SSH File
-Transfer Protocol", dostêpnym pod adresem
+%description -l pl.UTF-8
+Net::SFTP to czysto perlowa implementacja protokoÅ‚u SFTP (Secure File
+Transfer Protocol) - przesyÅ‚ania plikÃ³w w oparciu o protokÃ³Å‚ SSH.
+Net::SFTP uÅ¼ywa Net::SSH::Perl do utworzenia bezpiecznego,
+szyfrowanego tunelu, przez ktÃ³ry moÅ¼na przesyÅ‚aÄ‡ pliki i zarzÄ…dzaÄ‡
+nimi. UdostÄ™pnia podzbiÃ³r poleceÅ„ podanych w szkicu IETF "SSH File
+Transfer Protocol", dostÄ™pnym pod adresem
 http://www.openssh.com/txt/draft-ietf-secsh-filexfer-00.txt .
 
 %prep

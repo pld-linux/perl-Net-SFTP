@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SFTP
 Summary:	Net::SFTP - Secure File Transfer Protocol client
-Summary(pl.UTF-8):   Net::SFTP - klient protokołu SFTP (Secure File Transfer Protocol)
+Summary(pl.UTF-8):	Net::SFTP - klient protokołu SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP
 Version:	0.10
 Release:	0.1

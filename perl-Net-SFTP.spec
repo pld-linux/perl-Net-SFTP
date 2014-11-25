@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	SFTP
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::SFTP - Secure File Transfer Protocol client
 Summary(pl.UTF-8):	Net::SFTP - klient protokołu SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8383eb0839178cab8cbfe619b232b8c0
+URL:		http://search.cpan.org/dist/Net-SFTP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}

@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	SFTP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::SFTP - Secure File Transfer Protocol client
 Summary(pl.UTF-8):	Net::SFTP - klient protokołu SFTP (Secure File Transfer Protocol)
 Name:		perl-Net-SFTP
